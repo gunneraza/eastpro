@@ -1,0 +1,43 @@
+.section-feedback {
+  padding: 100px 0px;
+}
+
+.feedback-title {
+  text-align: center;
+  font-size: 40px;
+  color: #555;
+  margin: 40px 0px;
+}
+
+.feedback {
+
+  &-input {
+    width: 100%;
+    padding: 12px;
+    font-size: 18px;
+    color: #555;
+    border: 1px solid #444;
+    transition: 300ms ease;
+
+    &:focus {
+      border-color: #f05032;
+    }
+  }
+
+  &-button {
+    padding: 12px;
+    border: 1px solid #f05032;
+    border-radius: 4px;
+    width: 100%;
+    cursor: pointer;
+    font-size: 18px;
+    background-color: transparent;
+    color: #f05032;
+    transition: 300ms ease;
+
+    &:hover {
+      color: #fff;
+      background-color: #f05032;
+    }
+  }
+}
