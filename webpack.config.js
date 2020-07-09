@@ -51,6 +51,10 @@ const config = function(env, args) {
           loader: 'babel-loader',
         },
         {
+          test: /\.css$/,
+          use: ['style-loader', MiniCssExtractPlugin.loader, 'css-loader', 'postcss-loader'],
+        },
+        {
           test: /\.(png|gif|jpg|jpeg)$/,
           use: [
             {

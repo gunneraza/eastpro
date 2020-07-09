@@ -37,7 +37,8 @@
   },
   "dependencies": {
     "autoprefixer": "^9.8.4",
-    "bootstrap": "^4.5.0"
+    "bootstrap": "^4.5.0",
+    "swiper": "^5.4.5"
   },
   "devDependencies": {
     "@babel/core": "^7.10.3",
