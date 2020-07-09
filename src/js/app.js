@@ -4,5 +4,6 @@ import '../scss/app.scss';
 import './header'
 import './products'
 import './reviews'
+import './news'
 
 
