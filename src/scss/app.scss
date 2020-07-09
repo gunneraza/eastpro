@@ -13,11 +13,11 @@
 @import "~bootstrap/scss/bootstrap-grid";
 
 
-@media (min-width: 1400px) {
-  .container {
-    max-width: 1900px;
-  }
-}
+//@media (min-width: 1400px) {
+//  .container {
+//    max-width: 1900px;
+//  }
+//}
 
 body {
     font-family: 'Roboto', serif;
@@ -33,6 +33,7 @@ body {
 @import "partials/features";
 @import "partials/products";
 @import "partials/about";
+@import "partials/media";
 
 
 
