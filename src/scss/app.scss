@@ -7,9 +7,10 @@
 @import 'base/reset';
 
 /* Fonts */
-@import 'base/fonts';
+@import '../fonts/stylesheet.css';
 
 /* libs */
+
 @import "~bootstrap/scss/bootstrap-grid";
 
 
@@ -20,7 +21,7 @@
 //}
 
 body {
-    font-family: 'Roboto', serif;
+    font-family: 'Roboto Condensed', SansSerif;
 }
 
 
@@ -36,6 +37,7 @@ body {
 @import "partials/media";
 @import "partials/reviews";
 @import "partials/news";
+@import "partials/company";
 @import "partials/feedback";
 @import "partials/footer";
 

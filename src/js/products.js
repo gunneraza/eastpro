@@ -9,6 +9,9 @@ window.addEventListener('DOMContentLoaded', () => {
         navigation: {
             nextEl: '.product-button__next',
             prevEl: '.product-button__prev'
+        },
+        pagination: {
+            el: '.products-pagination'
         }
     });
 })

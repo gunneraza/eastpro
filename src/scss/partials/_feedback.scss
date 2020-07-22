@@ -22,6 +22,10 @@
     &:focus {
       border-color: #f05032;
     }
+    
+    @media (max-width: 992px) {
+      margin-bottom: 20px;
+    }
   }
 
   &-button {

@@ -9,16 +9,29 @@
   background-color: transparent;
   transition: 300ms ease;
 
+  
+  @media (max-width: 992px) {
+    background-color: #f05032;
+  }
+
   &-info {
     background-color: $orange;
     display: inline-block;
     padding: 20px 40px;
+    
+    @media (max-width: 992px) {
+      padding: 20px;
+    }
 
     .logo {
       color: #fff;
 
       display: flex;
       align-items: flex-end;
+      
+      @media (max-width: 992px) {
+        align-items: center;
+      }
 
       &__img {
         background-repeat: no-repeat;
@@ -28,15 +41,24 @@
         width: 60px;
         height: 60px;
         margin-right: 4px;
+        
+        @media (max-width: 992px) {
+          margin-right: 10px;
+        }
       }
 
       &__title {
-        font-weight: 600;
+        font-weight: 500;
         font-size: 24px;
       }
 
       &__subtitle {
         font-size: 14px;
+        
+        @media (max-width: 992px) {
+          width: 50%;
+          letter-spacing: 1.2px;
+        }
       }
     }
   }
@@ -46,14 +68,18 @@
     display: flex;
     padding: 30px 0px;
     margin-left: 40px;
+    
+    @media (max-width: 992px) {
+      display: none;
+    }
 
     a {
       color: #6f6f6e;
-      font-weight: 500;
+      font-weight: 600;
       transition: 300ms ease;
 
       &:not(:last-child) {
-        margin-right: 20px;
+        margin-right: 50px;
       }
 
       &:hover {
@@ -67,4 +93,99 @@
 .header.active {
   background-color: $white;
   box-shadow: 0px 3px 4px rgba(0,0,0,0.3);
+  
+  @media (max-width: 992px) {
+    background-color: #f05032;
+  }
+}
+
+.mobile-menu {
+  position: absolute;
+  top: 119px;
+  right: 0px;
+  background-color: rgba(255, 255, 255, 0.95);
+  width: 300px;
+  height: 100vh;
+  padding: 0px 20px;
+  display: flex;
+  flex-direction: column;
+  transform: translate(300px);
+  transition: 500ms ease;
+
+  &__list {
+    text-align: left;
+    width: 90%;
+    margin-bottom: 20px;
+  }
+
+  &__item {
+    padding: 20px;
+
+    border-bottom: 1px solid #555;
+  }
+
+  &__link {
+    color: #555;
+    font-size: 20px;
+  }
+}
+
+.mobile-button {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  position: absolute;
+  right: 0px;
+  top: 14px;
+  cursor: pointer;
+
+  span {
+    display: block;
+    width: 50px;
+    height: 4px;
+    background-color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -15px;
+    margin-top: -1px;
+    border-radius: 4px;
+    transition: 500ms ease;
+
+    &:before, &:after {
+      display: block;
+      content: '';
+      width: 50px;
+      height: 4px;
+      background-color: #fff;
+      position: absolute;
+      border-radius: 4px;
+      transition: 500ms ease;
+    }
+
+    &:before {
+      transform: translateY(-12px);
+    }
+
+    &:after {
+      transform: translateY(12px);
+    }
+  }
+
+}
+
+body.menu-active .mobile-button span {
+  height: 0px;
+}
+
+body.menu-active .mobile-button span:before {
+  transform: rotate(-40deg);
+}
+
+body.menu-active .mobile-button span:after {
+  transform: rotate(40deg);
+}
+
+body.menu-active .mobile-menu {
+  transform: translate(0px);
 }

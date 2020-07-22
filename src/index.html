@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap"
+          rel="stylesheet">
     <title>Eastpro</title>
 </head>
 <body>
@@ -245,22 +246,58 @@
         </a>
     </div>
     <nav>
-        <a href="#">Товары</a>
-        <a href="#">Поставщики услуг</a>
-        <a href="#">Поставщики услуг</a>
-        <a href="#">Промышленность</a>
-        <a href="#">Профессиональные услуги</a>
-        <a href="#">Ресурсы</a>
-        <a href="#">Онлайн события</a>
-        <a href="#">Блог</a>
-        <a href="#">Компания</a>
+        <a href="#home">Главная</a>
+        <a href="#products">Продукции</a>
+        <a href="#about">О нас</a>
+        <a href="#reviews">Отзывы</a>
+        <a href="#feedback">Контакты</a>
     </nav>
+    <div class="mobile-button">
+        <span></span>
+    </div>
+
+    <div class="mobile-menu">
+        <ul class="mobile-menu__list">
+            <li class="mobile-menu__item">
+                <a href="#home" class="mobile-menu__link">Главная</a>
+            </li>
+            <li class="mobile-menu__item">
+                <a href="#products" class="mobile-menu__link">Продукции</a>
+            </li>
+            <li class="mobile-menu__item">
+                <a href="#about" class="mobile-menu__link">О нас</a>
+            </li>
+            <li class="mobile-menu__item">
+                <a href="#reviews" class="mobile-menu__link">Отзывы</a>
+            </li>
+            <li class="mobile-menu__item">
+                <a href="#feedback" class="mobile-menu__link">Контакты</a>
+            </li>
+        </ul>
+        <div class="footer-socials">
+            <a href="#" class="footer-social">
+                <svg>
+                    <use href="#instagram"></use>
+                </svg>
+            </a>
+            <a href="#" class="footer-social">
+                <svg>
+                    <use href="#telegram"></use>
+                </svg>
+            </a>
+            <a href="#" class="footer-social">
+                <svg>
+                    <use href="#facebook"></use>
+                </svg>
+            </a>
+        </div>
+    </div>
 </header>
 
-<section class="section-home" style="background-image: url(images/content/home/home_bg.png)">
+<section class="section-home" id="home" style="background-image: url(images/content/home/home_bg.png)">
     <div class="container">
         <div class="row">
-            <div class="col-7">
+            <div class="col-lg-7">
                 <div class="home-info">
                     <h1 class="home-info__title">Подпишитесь на наше
                         онлайн-мероприятие</h1>
@@ -274,116 +311,88 @@
 </section>
 
 <section class="section-features">
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col-12">
-                <div class="features">
-                    <div class="features-text">Беспроводные решения для</div>
-                    <ul class="feature-list">
-                        <li class="features-list__item">
-                            <div class="feature">
-                                <div class="feature__icon">
-                                    <svg>
-                                        <use href="#builder"></use>
-                                    </svg>
-                                </div>
-                                <div class="feature__title">
-                                    Интернет провайдеры
-                                </div>
-                            </div>
-                        </li>
-                        <li class="features-list__item">
-                            <div class="feature">
-                                <div class="feature__icon">
-                                    <svg>
-                                        <use href="#shipping"></use>
-                                    </svg>
-                                </div>
-                                <div class="feature__title">
-                                    Доставка
-                                </div>
-                            </div>
-                        </li>
-                        <li class="features-list__item">
-                            <div class="feature">
-                                <div class="feature__icon">
-                                    <svg>
-                                        <use href="#ship"></use>
-                                    </svg>
-                                </div>
-                                <div class="feature__title">
-                                    Автоматизация портов
-                                </div>
-                            </div>
-                        </li>
-                        <li class="features-list__item">
-                            <div class="feature">
-                                <div class="feature__icon">
-                                    <svg>
-                                        <use href="#oil"></use>
-                                    </svg>
-                                </div>
-                                <div class="feature__title">
-                                    Нефть и газ
-                                </div>
-                            </div>
-                        </li>
-                        <li class="features-list__item">
-                            <div class="feature">
-                                <div class="feature__icon">
-                                    <svg>
-                                        <use href="#antenna"></use>
-                                    </svg>
-                                </div>
-                                <div class="feature__title">
-                                    Энергетика
-                                </div>
-                            </div>
-                        </li>
-                        <li class="features-list__item">
-                            <div class="feature">
-                                <div class="feature__icon">
-                                    <svg>
-                                        <use href="#bus"></use>
-                                    </svg>
-                                </div>
-                                <div class="feature__title">
-                                    Перевозка
-                                </div>
-                            </div>
-                        </li>
-                        <li class="features-list__item">
-                            <div class="feature">
-                                <div class="feature__icon">
-                                    <svg>
-                                        <use href="#oil"></use>
-                                    </svg>
-                                </div>
-                                <div class="feature__title">
-                                    Нефть и газ
-                                </div>
-                            </div>
-                        </li>
-                        <li class="features-list__item">
-                            <div class="feature">
-                                <div class="feature__icon">
-                                    <svg>
-                                        <use href="#antenna"></use>
-                                    </svg>
-                                </div>
-                                <div class="feature__title">
-                                    Энергетика
-                                </div>
-                            </div>
-                        </li>
-                    </ul>
+    <div class="container-fluid" style="width: 80%">
+        <div class="feature-wrapper">
+            <h4 class="features-title">Беспроводная сеть</h4>
+            <div class="feature-list">
+                <div class="feature">
+                    <div class="feature__header">
+                        <img src="images/content/icons/Carriers.png">
+                    </div>
+                    <div class="feature__body">
+                        <div class="feature__title">Интернет <br> провайдеры</div>
+
+                    </div>
+                </div>
+                <div class="feature">
+                    <div class="feature__header">
+                        <img src="images/content/icons/Fixed.png">
+                    </div>
+                    <div class="feature__body">
+                        <div class="feature__title">Носители</div>
+
+                    </div>
+                </div>
+                <div class="feature">
+                    <div class="feature__header">
+                        <img src="images/content/icons/transportation.png">
+                    </div>
+                    <div class="feature__body">
+                        <div class="feature__title">Перевозка</div>
+
+                    </div>
+                </div>
+                <div class="feature">
+                    <div class="feature__header">
+                        <img src="images/content/icons/Smart.png">
+                    </div>
+                    <div class="feature__body">
+                        <div class="feature__title">Умные города</div>
+
+                    </div>
+                </div>
+                <div class="feature">
+                    <div class="feature__header">
+                        <img src="images/content/icons/utility.png">
+                    </div>
+                    <div class="feature__body">
+                        <div class="feature__title">Энергетика</div>
+
+                    </div>
+                </div>
+                <div class="feature">
+                    <div class="feature__header">
+                        <img src="images/content/icons/redwin.png">
+                    </div>
+                    <div class="feature__body">
+                        <div class="feature__title">Газ и нефть</div>
+
+                    </div>
+                </div>
+                <div class="feature">
+                    <div class="feature__header">
+                        <img src="images/content/icons/redwin-mine.png">
+                    </div>
+                    <div class="feature__body">
+                        <div class="feature__title">Перевозка</div>
+
+                    </div>
+                </div>
+                <div class="feature">
+                    <div class="feature__header">
+                        <img src="images/content/icons/Sea.png">
+                    </div>
+                    <div class="feature__body">
+                        <div class="feature__title">Автоматизация <br> портов</div>
+
+                    </div>
                 </div>
             </div>
         </div>
     </div>
 </section>
 
-<section class="section-products">
+<section class="section-products" id="products">
     <div class="container">
         <div class="row justify-content-center">
             <div class="col-12">
@@ -393,9 +402,11 @@
                             <div class="product">
                                 <div class="product__header">
                                     <div class="product__title">JET DUO 5GHz</div>
-                                    <div class="product__description">1.5Gbps dual carrier beamforming base station for
-                                        areas demanding ultra-high capacity.JET DUO provides unmatched reliability in
-                                        the harsh unlicensed spectrum while securing minimal tower space and cost.
+                                    <div class="product__description">
+                                        Базовая станция формирования луча с двумя несущими 1,5 Гбит / с для
+                                        области, требующие сверхвысокой производительности. JET DUO обеспечивает
+                                        непревзойденную надежность в
+                                        резкий нелицензионный спектр при минимальных затратах и ​​стоимости башни.
                                     </div>
                                 </div>
                                 <div class="product__body">
@@ -407,19 +418,80 @@
                         <div class="swiper-slide products-slide">
                             <div class="product">
                                 <div class="product__header">
-                                    <div class="product__title">JET DUO 5GHz</div>
-                                    <div class="product__description">1.5Gbps dual carrier beamforming base station for
-                                        areas demanding ultra-high capacity.JET DUO provides unmatched reliability in
-                                        the harsh unlicensed spectrum while securing minimal tower space and cost.
+                                    <div class="product__title">Introducing RADWIN 2000 Alpha</div>
+                                    <div class="product__description">
+                                        PAD-радио RADWIN ALPHA теперь предлагает скорость до 500 Мбит / с в диапазонах
+                                        5xGhz и 3.xGHz
                                     </div>
                                 </div>
                                 <div class="product__body">
                                     <div class="product__img"
-                                         style="background-image: url(images/content/products/product.jpg)"></div>
+                                         style="background-image: url(images/content/products/product-2.jpg)"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide products-slide">
+                            <div class="product">
+                                <div class="product__header">
+                                    <div class="product__title">3.x GHz Subscriber Unit - SU PRO INT</div>
+                                    <div class="product__description">
+                                        Поддерживая до 100 Мбит / с, новая встроенная антенна 19dBi поддерживает
+                                        WINTouch
+                                    </div>
+                                </div>
+                                <div class="product__body">
+                                    <div class="product__img"
+                                         style="background-image: url(images/content/products/product-3.jpg)"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide products-slide">
+                            <div class="product">
+                                <div class="product__header">
+                                    <div class="product__title">JET AIR - высочайшее качество</div>
+                                    <div class="product__description">Беспроводная широкополосная связь RADWIN
+                                        операторского класса теперь доступна для домашних сетей и WISP
+                                    </div>
+                                </div>
+                                <div class="product__body">
+                                    <div class="product__img"
+                                         style="background-image: url(images/content/products/product-4.jpg)"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide products-slide">
+                            <div class="product">
+                                <div class="product__header">
+                                    <div class="product__title">Представляем Smart-Node</div>
+                                    <div class="product__description">Smart-Node - это первое в мире универсальное
+                                        решение для управления несколькими источниками питания и мультимедиа. <br>
+                                        Smart-Node обеспечивает питание и подключение для различных устройств, включая
+                                        камеры видеонаблюдения, беспроводные широкополосные радиоприемники, точки
+                                        доступа Wi-Fi и датчики IoT.
+                                    </div>
+                                </div>
+                                <div class="product__body">
+                                    <div class="product__img"
+                                         style="background-image: url(images/content/products/product-5.jpg)"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide products-slide">
+                            <div class="product">
+                                <div class="product__header">
+                                    <div class="product__title">Инструменты OSS</div>
+                                    <div class="product__description">New OSS applications to transform wireless network
+                                        operations
+                                    </div>
+                                </div>
+                                <div class="product__body">
+                                    <div class="product__img"
+                                         style="background-image: url(images/content/products/product-6.jpg)"></div>
                                 </div>
                             </div>
                         </div>
                     </div>
+                    <div class="swiper-pagination products-pagination"></div>
                     <div class="products-buttons">
                         <div class="product-button product-button__next">
                             <svg>
@@ -438,18 +510,20 @@
     </div>
 </section>
 
-<section class="section-about" style="background-image: url(images/content/about/about.jpg)">
+<section class="section-about" id="about" style="background-image: url(images/content/about/about.jpg)">
     <div class="container">
         <div class="row">
             <div class="col-12">
                 <div class="about">
-                    <h4 class="about__title">Enabled by Bi-Beam™ <br> taking wireless performance to the edge</h4>
+                    <h4 class="about__title">Включено Bi-Beam ™ <br> доведение производительности беспроводной связи до
+                        предела</h4>
                     <div class="row justify-content-center">
-                        <div class="col-8">
-                            <p class="about__text">RADWIN is redefining what’s possible in wireless broadband with its
-                                revolutionary Bi-Beam™
-                                technology, the industry’s first bi-directional beamforming transmission
-                                which enables best-in-class interference immunity.</p>
+                        <div class="col-md-8 col-12">
+                            <p class="about__text">RADWIN переосмысливает возможности беспроводного широкополосного
+                                доступа
+                                революционный Bi-Beam ™
+                                технология, первая в отрасли двунаправленная передача формирования луча
+                                которая обеспечивает лучшую в своем классе помехоустойчивость.</p>
                         </div>
                     </div>
                 </div>
@@ -462,29 +536,32 @@
     <div class="container">
         <div class="row align-items-center">
             <div class="col-12 col-sm-12 col-md-12 col-lg-12 text-center">
-                <h3>Built to stand up to today's and tomorrow's<br> Triple-Play services</h3>
-                <p>Video-on-demand, online gaming and videoconferencing increasingly play a larger role in
-                    our everyday lives. RADWIN is committed to keeping pace with the ever-advancing needs of the digital
-                    age, supporting high-capacity applications while delivering a superior user experience.</p>
-                <div class="marvel-device macbook">
-                    <div class="top-bar"></div>
-                    <div class="camera"></div>
-                    <div class="screen">
-                        <div class="embed-responsive embed-responsive-16by9">
-                            <iframe width="100%" height="100%" src="https://www.youtube.com/embed/8Ki7_lewfYI"
-                                    frameborder="0"
-                                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                                    allowfullscreen></iframe>
+                <h3>Создан, чтобы противостоять сегодняшним и завтрашним Услуги Triple-Play</h3>
+                <p>Видео по запросу, онлайн-игры и видеоконференции все больше играют
+                    наша повседневная жизнь. RADWIN стремится идти в ногу с постоянно растущими потребностями цифрового
+                    возраст, поддержка приложений с высокой пропускной способностью при обеспечении превосходного
+                    пользовательского опыта</p>
+                <div class="test-wrapper">
+                    <div class="marvel-device macbook">
+                        <div class="top-bar"></div>
+                        <div class="camera"></div>
+                        <div class="screen">
+                            <div class="embed-responsive embed-responsive-16by9">
+                                <iframe width="100%" height="100%" src="https://www.youtube.com/embed/5LVxuEhpSd4"
+                                        frameborder="0"
+                                        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                                        allowfullscreen></iframe>
+                            </div>
                         </div>
+                        <div class="bottom-bar"></div>
                     </div>
-                    <div class="bottom-bar"></div>
                 </div>
             </div>
         </div>
     </div>
 </section>
 
-<section class="section-reviews">
+<section class="section-reviews" id="reviews">
     <div class="container">
         <div class="row justify-content-center">
             <div class="col-1">
@@ -494,7 +571,7 @@
                     </svg>
                 </div>
             </div>
-            <div class="col-10">
+            <div class="col-md-10">
                 <div class="swiper-container reviews-slider">
                     <div class="swiper-wrapper">
                         <div class="swiper-slide reviews-slide">
@@ -502,11 +579,101 @@
                                 <div class="review-img"
                                      style="background-image: url(https://rad-stg-9ra4idmgea.netdna-ssl.com/wp-content/uploads/2020/03/stan.png)"></div>
                                 <div class="review-info">
-                                    <div class="review-info__text">“We chose RADWIN’s JET over fiber for cost and ease
-                                        of installation. With JET we just put a tower and the signal is there."
+                                    <div class="review-info__text">
+                                        «Мы выбрали JET от RADWIN, а не волокна
+                                        установки. С JET мы просто ставим башню и сигнал есть ".
                                     </div>
-                                    <h4 class="review-info__title">Stan Masneri, Senior Manager</h4>
-                                    <div class="review-info__subtitle">Alaska Communications</div>
+                                    <h4 class="review-info__title">Stan Masneri, Старший менеджер</h4>
+                                    <div class="review-info__subtitle">Аляска Коммуникации</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide reviews-slide">
+                            <div class="review">
+                                <div class="review-img"
+                                     style="background-image: url(https://rad-stg-9ra4idmgea.netdna-ssl.com/wp-content/uploads/2020/03/rob.png)"></div>
+                                <div class="review-info">
+                                    <div class="review-info__text">
+                                        «Мы пришли к выводу, что радиоприемники и инструменты RADWIN были для нас
+                                        правильным решением. Мы хотели найти решение, которое позволило бы нам
+                                        предоставлять не только постоянным клиентам, но и тысячам фиксированных
+                                        беспроводных пользователей».
+                                    </div>
+                                    <h4 class="review-info__title">Роб Скотт, старший менеджер, сетевое проектирование и
+                                        стратегия</h4>
+                                    <div class="review-info__subtitle">Аляска Коммуникации</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide reviews-slide">
+                            <div class="review">
+                                <div class="review-img"
+                                     style="background-image: url(https://rad-stg-9ra4idmgea.netdna-ssl.com/wp-content/uploads/2020/03/people.png)"></div>
+                                <div class="review-info">
+                                    <div class="review-info__text">
+                                        «Нашим техническим специалистам нравится простота установки и тот факт, что
+                                        после установки им редко приходится возвращаться к проблеме».
+                                    </div>
+                                    <h4 class="review-info__title">Кит Киндл, Директор по беспроводным операциям</h4>
+                                    <div class="review-info__subtitle">Peoples Wireless, Техас, США</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide reviews-slide">
+                            <div class="review">
+                                <div class="review-img"
+                                     style="background-image: url(https://rad-stg-9ra4idmgea.netdna-ssl.com/wp-content/uploads/2020/03/nwic.png)"></div>
+                                <div class="review-info">
+                                    <div class="review-info__text">
+                                        «С тех пор как мы развернули JET, мы достигли большего ARPU благодаря надежному
+                                        соединению и высокопроизводительной услуге, которую JET предоставляет нашим
+                                        абонентам даже в перегруженных по частоте городских районах».
+                                    </div>
+                                    <h4 class="review-info__title">Скотт Холмс, генеральный директор</h4>
+                                    <div class="review-info__subtitle">NWIC, Canada</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide reviews-slide">
+                            <div class="review">
+                                <div class="review-img"
+                                     style="background-image: url(https://rad-stg-9ra4idmgea.netdna-ssl.com/wp-content/uploads/2020/03/net1.png)"></div>
+                                <div class="review-info">
+                                    <div class="review-info__text">
+                                        «RETWIN JET PtMP был единственным продуктом, который действительно дал то, что
+                                        обещал нам. Клиенты так счастливы, что рекомендуют наши услуги; показатели
+                                        оттока упали, а лояльность клиентов находится на рекордно высоком уровне».
+                                    </div>
+                                    <h4 class="review-info__title">Эндрю Маккивер, управляющий директор</h4>
+                                    <div class="review-info__subtitle">Net1, Ирландия</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide reviews-slide">
+                            <div class="review">
+                                <div class="review-img"
+                                     style="background-image: url(https://rad-stg-9ra4idmgea.netdna-ssl.com/wp-content/uploads/2020/03/bioniq.png)"></div>
+                                <div class="review-info">
+                                    <div class="review-info__text">
+                                        «Наш опыт работы с оборудованием RADWIN был исключительно положительным, и наши
+                                        клиенты пользуются постоянно высокоскоростным широкополосным соединением».
+                                    </div>
+                                    <h4 class="review-info__title">Александр Бота, управляющий директор</h4>
+                                    <div class="review-info__subtitle">Bioniq</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide reviews-slide">
+                            <div class="review">
+                                <div class="review-img"
+                                     style="background-image: url(https://rad-stg-9ra4idmgea.netdna-ssl.com/wp-content/uploads/2020/03/agile.png)"></div>
+                                <div class="review-info">
+                                    <div class="review-info__text">
+                                        «RADWIN JET неизменно превосходит все оборудование других поставщиков и
+                                        обеспечивает сервис на уровне волокон, который мы гарантируем нашим клиентам».
+                                    </div>
+                                    <h4 class="review-info__title">Кайл Квиллен, основатель и технический директор</h4>
+                                    <div class="review-info__subtitle">Agile Networks</div>
                                 </div>
                             </div>
                         </div>
@@ -539,16 +706,14 @@
                                              style="background-image: url(https://rad-stg-9ra4idmgea.netdna-ssl.com/wp-content/uploads/2020/04/union-pacific-whats-new.png)"></div>
                                     </div>
                                     <div class="news__body">
-                                        <div class="news__title">Case Study: Butler Electric Cooperative delivers
-                                            100Mbps
-                                            wireless broadband with JET PtMP
+                                        <div class="news__title">
+                                            Union Pacific использует RADWIN для перевозки сотен камер видеонаблюдения
                                         </div>
-                                        <div class="news__text">Union Pacific Railroad has deployed RADWIN’s portfolio
-                                            of
-                                            PtP and PtMP solutions to monitor and manage hundreds of remote railyards by
-                                            implementing high throughput video surveillance networks and connecting
-                                            remote
-                                            railyard buildings.
+                                        <div class="news__text">
+                                            Компания Union Pacific Railroad развернула портфель решений PtP и PtMP
+                                            компании RADWIN для мониторинга и управления сотнями удаленных станций,
+                                            внедряя сети видеонаблюдения с высокой пропускной способностью и соединяя
+                                            здания удаленных станций.
                                         </div>
                                     </div>
                                 </div>
@@ -557,19 +722,18 @@
                                 <div class="news">
                                     <div class="news__header">
                                         <div class="news__img"
-                                             style="background-image: url(https://rad-stg-9ra4idmgea.netdna-ssl.com/wp-content/uploads/2020/04/union-pacific-whats-new.png)"></div>
+                                             style="background-image: url(https://rad-stg-9ra4idmgea.netdna-ssl.com/wp-content/uploads/2020/05/beamforming-whitepaper.png)"></div>
                                     </div>
                                     <div class="news__body">
-                                        <div class="news__title">Case Study: Butler Electric Cooperative delivers
-                                            100Mbps
-                                            wireless broadband with JET PtMP
+                                        <div class="news__title">
+                                            Технический документ: почему базовая станция с двумя несущими с
+                                            формированием луча является выигрышным решением для фиксированного
+                                            беспроводного доступа?
                                         </div>
-                                        <div class="news__text">Union Pacific Railroad has deployed RADWIN’s portfolio
-                                            of
-                                            PtP and PtMP solutions to monitor and manage hundreds of remote railyards by
-                                            implementing high throughput video surveillance networks and connecting
-                                            remote
-                                            railyard buildings.
+                                        <div class="news__text">
+                                            Узнайте об ограничениях типичной антенны пассивного сектора PtMP, поймите,
+                                            что такое антенна формирования луча, и выясните, как она уменьшает
+                                            ограничения антенны пассивного сектора.
                                         </div>
                                     </div>
                                 </div>
@@ -578,19 +742,15 @@
                                 <div class="news">
                                     <div class="news__header">
                                         <div class="news__img"
-                                             style="background-image: url(https://rad-stg-9ra4idmgea.netdna-ssl.com/wp-content/uploads/2020/04/union-pacific-whats-new.png)"></div>
+                                             style="background-image: url(https://rad-stg-9ra4idmgea.netdna-ssl.com/wp-content/uploads/2020/05/IDU-S.png)"></div>
                                     </div>
                                     <div class="news__body">
-                                        <div class="news__title">Case Study: Butler Electric Cooperative delivers
-                                            100Mbps
-                                            wireless broadband with JET PtMP
+                                        <div class="news__title">
+                                            НОВЫЙ внутренний выключатель IDU-S Layer 2
                                         </div>
-                                        <div class="news__text">Union Pacific Railroad has deployed RADWIN’s portfolio
-                                            of
-                                            PtP and PtMP solutions to monitor and manage hundreds of remote railyards by
-                                            implementing high throughput video surveillance networks and connecting
-                                            remote
-                                            railyard buildings.
+                                        <div class="news__text">
+                                            Управляемый коммутатор Ethernet IDU-S с полными возможностями коммутации
+                                            2-го уровня и высоким энергопотреблением
                                         </div>
                                     </div>
                                 </div>
@@ -599,19 +759,194 @@
                                 <div class="news">
                                     <div class="news__header">
                                         <div class="news__img"
-                                             style="background-image: url(https://rad-stg-9ra4idmgea.netdna-ssl.com/wp-content/uploads/2020/04/union-pacific-whats-new.png)"></div>
+                                             style="background-image: url(https://rad-stg-9ra4idmgea.netdna-ssl.com/wp-content/uploads/2020/03/fixed-wireless-for-rural-alaska.png)"></div>
                                     </div>
                                     <div class="news__body">
-                                        <div class="news__title">Case Study: Butler Electric Cooperative delivers
-                                            100Mbps
-                                            wireless broadband with JET PtMP
+                                        <div class="news__title">
+                                            Пример использования: фиксированная беспроводная связь - это путь для Alaska
+                                            Communications
                                         </div>
-                                        <div class="news__text">Union Pacific Railroad has deployed RADWIN’s portfolio
-                                            of
-                                            PtP and PtMP solutions to monitor and manage hundreds of remote railyards by
-                                            implementing high throughput video surveillance networks and connecting
-                                            remote
-                                            railyard buildings.
+                                        <div class="news__text">
+                                            В соответствии с фондом Connect America, Alaska Communications взяла на себя
+                                            обязательство предоставлять интернет-услуги со скоростью загрузки не менее
+                                            10 Мбит / с и загрузкой 1 Мбит / с в сельские районы Аляски, одобренные FCC.
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide news-slide">
+                                <div class="news">
+                                    <div class="news__header">
+                                        <div class="news__img"
+                                             style="background-image: url(https://rad-stg-9ra4idmgea.netdna-ssl.com/wp-content/uploads/2020/02/wiber-pr-whats-new.jpg)"></div>
+                                    </div>
+                                    <div class="news__body">
+                                        <div class="news__title">
+                                            Wiber имеет реальный рост доходов с JET PtMP
+                                        </div>
+                                        <div class="news__text">
+                                            Wiber Solutions развернула свои решения JET Beam для создания многоточечной
+                                            связи, чтобы заменить устаревшую устаревшую сеть и обеспечить быструю
+                                            широкополосную связь для предприятий и частных клиентов на Южном
+                                            полуострове.
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide news-slide">
+                                <div class="news">
+                                    <div class="news__header">
+                                        <div class="news__img"
+                                             style="background-image: url(https://rad-stg-9ra4idmgea.netdna-ssl.com/wp-content/uploads/2019/05/breaking-down-digital-divide-colorado-radwin.jpg)"></div>
+                                    </div>
+                                    <div class="news__body">
+                                        <div class="news__title">
+                                            Разрушение цифрового разрыва в Колорадо
+                                        </div>
+                                        <div class="news__text">
+                                            «С RADWIN подписчики JET PtMP получают более высокие скорости, а качество
+                                            обслуживания клиентов является феноменальным!»
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide news-slide">
+                                <div class="news">
+                                    <div class="news__header">
+                                        <div class="news__img"
+                                             style="background-image: url(https://rad-stg-9ra4idmgea.netdna-ssl.com/wp-content/uploads/2019/05/paratus-jet-duo-boosts-network-capacity.jpg)"></div>
+                                    </div>
+                                    <div class="news__body">
+                                        <div class="news__title">
+                                            RADWIN JET DUO увеличивает пропускную способность сети
+                                        </div>
+                                        <div class="news__text">
+                                            Paratus Group, панафриканский оператор связи, развернул революционное
+                                            двухдиапазонное решение JET DUO PtMP в Замбии, чтобы расширить возможности
+                                            беспроводной связи для малых и средних предприятий и крупных корпораций.
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide news-slide">
+                                <div class="news">
+                                    <div class="news__header">
+                                        <div class="news__img"
+                                             style="background-image: url(https://rad-stg-9ra4idmgea.netdna-ssl.com/wp-content/uploads/2019/06/radwin-60Ghz-mesh-solution-terragraph.jpg)"></div>
+                                    </div>
+                                    <div class="news__body">
+                                        <div class="news__title">
+                                            Пилотное развертывание 60 ГГц
+                                        </div>
+                                        <div class="news__text">
+                                            Посетите наш последний блог о включении технологии связи для AGV в
+                                            контейнерах-портах и &#8203;&#8203;предоставляемых преимуществах.
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide news-slide">
+                                <div class="news">
+                                    <div class="news__header">
+                                        <div class="news__img"
+                                             style="background-image: url(https://rad-stg-9ra4idmgea.netdna-ssl.com/wp-content/uploads/2019/06/qingdao-fully-automated-port-web.jpg)"></div>
+                                    </div>
+                                    <div class="news__body">
+                                        <div class="news__title">
+                                            Решения RADWIN для автоматизированных портов
+                                        </div>
+                                        <div class="news__text">
+                                            Посетите наш последний блог о включении технологии связи для AGV в
+                                            контейнерах-портах и ​​предоставляемых преимуществах.
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide news-slide">
+                                <div class="news">
+                                    <div class="news__header">
+                                        <div class="news__img"
+                                             style="background-image: url(https://rad-stg-9ra4idmgea.netdna-ssl.com/wp-content/uploads/2019/06/PR-banner-pic-394x282.png)"></div>
+                                    </div>
+                                    <div class="news__body">
+                                        <div class="news__title">
+                                            Расширение ветрового потока
+                                        </div>
+                                        <div class="news__text">
+                                            Windstream использует стационарное беспроводное оборудование RADWIN для
+                                            расширения зоны покрытия в сельской местности.
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide news-slide">
+                                <div class="news">
+                                    <div class="news__header">
+                                        <div class="news__img"
+                                             style="background-image: url(https://rad-stg-9ra4idmgea.netdna-ssl.com/wp-content/uploads/2018/07/PR-RADWIN-Microsoft-394x282.png)"></div>
+                                    </div>
+                                    <div class="news__body">
+                                        <div class="news__title">
+                                            ТВ White Space Solutions
+                                        </div>
+                                        <div class="news__text">
+                                            RADWIN & Microsoft - партнер в разработке инновационных решений для
+                                            телевидения White Space
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide news-slide">
+                                <div class="news">
+                                    <div class="news__header">
+                                        <div class="news__img"
+                                             style="background-image: url(https://rad-stg-9ra4idmgea.netdna-ssl.com/wp-content/uploads/2018/04/Smart-Node-overview-clip-thumbnail.jpg)"></div>
+                                    </div>
+                                    <div class="news__body">
+                                        <div class="news__title">
+                                            Обзор Smart-Node
+                                        </div>
+                                        <div class="news__text">
+                                            Проверьте параметры подключения Smart-Node и получите эксклюзивный вид «под
+                                            капотом»
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide news-slide">
+                                <div class="news">
+                                    <div class="news__header">
+                                        <div class="news__img"
+                                             style="background-image: url(https://rad-stg-9ra4idmgea.netdna-ssl.com/wp-content/uploads/2020/02/eprotel-pr-whats-new.jpg)"></div>
+                                    </div>
+                                    <div class="news__body">
+                                        <div class="news__title">
+                                            Поставщик услуг в Венесуэле развертывает RADWIN 2000 Alpha PtP для
+                                            высокоскоростного транзитного соединения Wi-Fi
+                                        </div>
+                                        <div class="news__text">
+                                            Крупный поставщик услуг в Венесуэле развернул сотни PtP RADWIN 2000 Alpha
+                                            5,8 ГГц для подключения высокоскоростных точек доступа Wi-Fi в общественных
+                                            местах.
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide news-slide">
+                                <div class="news">
+                                    <div class="news__header">
+                                        <div class="news__img"
+                                             style="background-image: url(https://rad-stg-9ra4idmgea.netdna-ssl.com/wp-content/uploads/2020/02/eprotel-pr-whats-new.jpg)"></div>
+                                    </div>
+                                    <div class="news__body">
+                                        <div class="news__title">
+                                            Поставщик услуг в Венесуэле развертывает RADWIN 2000 Alpha PtP для
+                                            высокоскоростного транзитного соединения Wi-Fi
+                                        </div>
+                                        <div class="news__text">
+                                            Крупный поставщик услуг в Венесуэле развернул сотни PtP RADWIN 2000 Alpha
+                                            5,8 ГГц для подключения высокоскоростных точек доступа Wi-Fi в общественных
+                                            местах.
                                         </div>
                                     </div>
                                 </div>
@@ -638,15 +973,35 @@
     </div>
 </section>
 
-<section class="section-feedback">
+<section class="section-company">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <h5 class="company-title">AVIWEST</h5>
+            </div>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-8">
+                <div class="company-info">
+                    <p>Более подробно о нашей продукции и ознакомится с нашими услугами вы можете узнать по адресу <a target="_blank" href="https://www.aviwest.com/">aviwest.com</a></p>
+                    <p>Так же вы можете скачать наш <a download href="document.pdf">файл</a> где подробно можете ознакомится</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="section-feedback" id="feedback">
     <div class="container">
         <div class="row justify-content-center">
-            <div class="col-2">
-                <img loading="lazy"
-                     src="https://rad-stg-9ra4idmgea.netdna-ssl.com/wp-content/uploads/2017/08/wifi-2.gif"
-                     class="mb30 lazyloaded"
-                     data-lazy-src="https://rad-stg-9ra4idmgea.netdna-ssl.com/wp-content/uploads/2017/08/wifi-2.gif"
-                     data-was-processed="true">
+            <div class="col-lg-2 col-6">
+                <div class="d-flex justify-content-center">
+                    <img loading="lazy"
+                         src="https://rad-stg-9ra4idmgea.netdna-ssl.com/wp-content/uploads/2017/08/wifi-2.gif"
+                         class="mb30 lazyloaded"
+                         data-lazy-src="https://rad-stg-9ra4idmgea.netdna-ssl.com/wp-content/uploads/2017/08/wifi-2.gif"
+                         data-was-processed="true">
+                </div>
             </div>
         </div>
         <div class="row">
@@ -658,13 +1013,13 @@
             <div class="col-12">
                 <form action="#" class="feedback">
                     <div class="row">
-                        <div class="col-4">
+                        <div class="col-lg-4 col-12">
                             <input type="text" placeholder="Имя" class="feedback-input">
                         </div>
-                        <div class="col-4">
+                        <div class="col-lg-4 col-12">
                             <input type="text" placeholder="Эл. почта" class="feedback-input">
                         </div>
-                        <div class="col-4">
+                        <div class="col-lg-4 col-12">
                             <button class="feedback-button">Отправить</button>
                         </div>
                     </div>
@@ -679,91 +1034,86 @@
         <div class="row">
             <div class="col-12">
                 <div class="footer-lists">
-                    <div class="footer-list">
-                        <div class="footer-list__title">Products</div>
-                        <ul class="footer-list__links">
-                            <li class="footer-list__item">
-                                <a href="#" class="footer-list__link">JET DUO 5GHz</a>
-                            </li>
-                            <li class="footer-list__item">
-                                <a href="#" class="footer-list__link">JET Series</a>
-                            </li>
-                            <li class="footer-list__item">
-                                <a href="#" class="footer-list__link">RADWIN 5000</a>
-                            </li>
-                            <li class="footer-list__item">
-                                <a href="#" class="footer-list__link">RADWIN 2000</a>
-                            </li>
-                            <li class="footer-list__item">
-                                <a href="#" class="footer-list__link">RADWIN 2000 Alpha</a>
-                            </li>
-                            <li class="footer-list__item">
-                                <a href="#" class="footer-list__link">OSS Tools</a>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="footer-list">
-                        <div class="footer-list__title">Service Providers</div>
-                        <ul class="footer-list__links">
-                            <li class="footer-list__item">
-                                <a href="#" class="footer-list__link">Carriers</a>
-                            </li>
-                            <li class="footer-list__item">
-                                <a href="#" class="footer-list__link">Wireless ISPs</a>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="footer-list">
-                        <div class="footer-list__title">Industries</div>
-                        <ul class="footer-list__links">
-                            <li class="footer-list__item">
-                                <a href="#" class="footer-list__link">Connected</a>
-                            </li>
-                            <li class="footer-list__item">
-                                <a href="#" class="footer-list__link">Transportation</a>
-                            </li>
-                            <li class="footer-list__item">
-                                <a href="#" class="footer-list__link">Power Utilities</a>
-                            </li>
-                            <li class="footer-list__item">
-                                <a href="#" class="footer-list__link">Digital Oil Fields</a>
-                            </li>
-                            <li class="footer-list__item">
-                                <a href="#" class="footer-list__link">Forrestry</a>
-                            </li>
-                            <li class="footer-list__item">
-                                <a href="#" class="footer-list__link">Mirning</a>
-                            </li>
-                            <li class="footer-list__item">
-                                <a href="#" class="footer-list__link">Sea Port</a>
-                            </li>
-                            <li class="footer-list__item">
-                                <a href="#" class="footer-list__link">Automation</a>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="footer-list">
-                        <div class="footer-list__title">Professional Services</div>
-                    </div>
-                    <div class="footer-list">
-                        <div class="footer-list__title">Resources</div>
-                        <ul class="footer-list__links">
-                            <li class="footer-list__item">
-                                <a href="#" class="footer-list__link">Brochures</a>
-                            </li>
-                            <li class="footer-list__item">
-                                <a href="#" class="footer-list__link">Case Studies</a>
-                            </li>
-                            <li class="footer-list__item">
-                                <a href="#" class="footer-list__link">Videos</a>
-                            </li>
-                            <li class="footer-list__item">
-                                <a href="#" class="footer-list__link">On-Demand Webinars</a>
-                            </li>
-                        </ul>
+                    <div class="row d-flex justify-content-between" style="width: 100%;">
+                        <div class="col-md-3 col-6"><div class="footer-list">
+                            <div class="footer-list__title">Товары</div>
+                            <ul class="footer-list__links">
+                                <li class="footer-list__item">
+                                    <a href="#" class="footer-list__link">JET DUO 5GHz</a>
+                                </li>
+                                <li class="footer-list__item">
+                                    <a href="#" class="footer-list__link">JET Series</a>
+                                </li>
+                                <li class="footer-list__item">
+                                    <a href="#" class="footer-list__link">RADWIN 5000</a>
+                                </li>
+                                <li class="footer-list__item">
+                                    <a href="#" class="footer-list__link">RADWIN 2000</a>
+                                </li>
+                                <li class="footer-list__item">
+                                    <a href="#" class="footer-list__link">RADWIN 2000 Alpha</a>
+                                </li>
+                                <li class="footer-list__item">
+                                    <a href="#" class="footer-list__link">OSS Tools</a>
+                                </li>
+                            </ul>
+                        </div></div>
+                        <div class="col-md-3 col-6"><div class="footer-list">
+                            <div class="footer-list__title">Поставщики услуг</div>
+                            <ul class="footer-list__links">
+                                <li class="footer-list__item">
+                                    <a href="#" class="footer-list__link">Носители</a>
+                                </li>
+                                <li class="footer-list__item">
+                                    <a href="#" class="footer-list__link">Беспроводные интернет-провайдеры</a>
+                                </li>
+                            </ul>
+                        </div></div>
+                        <div class="col-md-3 col-6"><div class="footer-list">
+                            <div class="footer-list__title">Промышленности</div>
+                            <ul class="footer-list__links">
+                                <li class="footer-list__item">
+                                    <a href="#" class="footer-list__link">Подключенный транспорт</a>
+                                </li>
+                                <li class="footer-list__item">
+                                    <a href="#" class="footer-list__link">Умные Города</a>
+                                </li>
+                                <li class="footer-list__item">
+                                    <a href="#" class="footer-list__link">Энергетика</a>
+                                </li>
+                                <li class="footer-list__item">
+                                    <a href="#" class="footer-list__link">Электрический Coop Broadband</a>
+                                </li>
+                                <li class="footer-list__item">
+                                    <a href="#" class="footer-list__link">Цифровые нефтяные месторождения</a>
+                                </li>
+                                <li class="footer-list__item">
+                                    <a href="#" class="footer-list__link">Автоматизация морского порта</a>
+                                </li>
+                                <li class="footer-list__item">
+                                    <a href="#" class="footer-list__link">Интеллектуальное лесное хозяйство</a>
+                                </li>
+                            </ul>
+                        </div></div>
+                        <div class="col-md-3 col-6"><div class="footer-list">
+                            <div class="footer-list__title">Ресурсы</div>
+                            <ul class="footer-list__links">
+                                <li class="footer-list__item">
+                                    <a href="#" class="footer-list__link">Брошюры</a>
+                                </li>
+                                <li class="footer-list__item">
+                                    <a href="#" class="footer-list__link">Тематические исследования</a>
+                                </li>
+                                <li class="footer-list__item">
+                                    <a href="#" class="footer-list__link">Ролики</a>
+                                </li>
+                                <li class="footer-list__item">
+                                    <a href="#" class="footer-list__link">Веб-семинары по требованию</a>
+                                </li>
+                            </ul>
+                        </div></div>
                     </div>
                 </div>
-
             </div>
         </div>
         <div class="row">
@@ -771,9 +1121,12 @@
                 <div class="footer-info">
                     <div class="footer-info__description">
                         <div class="footer-info__title">EASTPRO</div>
-                        <div class="footer-info__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                            Consectetur esse exercitationem iste laboriosam laborum maiores pariatur placeat rerum totam
-                            veniam.
+                        <div class="footer-info__text">EASTPRO предлагает полный набор беспроводных решений для
+                            двухточечной, двухточечной и широкополосной мобильности,
+                            приложений для обеспечения питания, включая транзитные соединения, широкополосный доступ,
+                            подключение к частной сети и
+                            передачу видеонаблюдения, а также широкополосную беспроводную связь в движении для поездов.
+                            , транспортные средства и суда.
                         </div>
                     </div>
                     <div class="footer-socials">
@@ -794,6 +1147,11 @@
                         </a>
                     </div>
                 </div>
+            </div>
+        </div>
+        <div class="row justify-content-end">
+            <div class="col-sm-4">
+                <div style="padding: 10px 0px; text-align: right">&#169; EASTPRO | 2020 г.</div>
             </div>
         </div>
     </div>

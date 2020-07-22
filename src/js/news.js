@@ -14,5 +14,18 @@ window.addEventListener('DOMContentLoaded', () => {
         pagination: {
             el: '.news-pagination',
         },
+        breakpoints: {
+            200: {
+                slidesPerView: 1,
+            },
+
+            768: {
+                slidesPerView: 2
+            },
+
+            992: {
+                slidesPerView: 3
+            }
+        }
     });
 })

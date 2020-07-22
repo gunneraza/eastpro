@@ -2,21 +2,39 @@
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
-  padding: 300px 0px;
+  padding: 200px 0px;
+
+  @media (max-width: 768px) {
+    background-position: center left;
+  }
 }
 
 .home-info {
   color: #6f6f6e;
+  
+  @media (max-width: 768px) {
+    text-align: center;
+  }
 
   &__title {
-    font-weight: 800;
+    font-weight: 400;
+    text-shadow: 4px 4px 4px rgba(0,0,0,.2);
     font-size: 52px;
     padding-right: 90px;
     margin-bottom: 20px;
+    
+    @media (max-width: 768px) {
+      padding-right: 0px;
+    }
   }
 
   &__description {
     font-size: 24px;
     padding-right: 80px;
+    text-shadow: 4px 4px 4px rgba(0,0,0,.2);
+
+    @media (max-width: 768px) {
+      padding-right: 0px;
+    }
   }
 }

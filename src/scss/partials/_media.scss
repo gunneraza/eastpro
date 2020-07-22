@@ -159,6 +159,14 @@ body .marvel-device .screen .embed-responsive {
   font-size: 50px;
   color: #555;
   margin-bottom: 20px;
+  
+  @media (max-width: 768px) {
+    font-size: 40px;
+  }
+  
+  @media (max-width: 576px) {
+    font-size: 30px;
+  }
 }
 
 .video-section p {
@@ -166,6 +174,10 @@ body .marvel-device .screen .embed-responsive {
   color: #555;
   text-align: center;
   margin-bottom: 40px;
+  
+  @media (max-width: 768px) {
+    font-size: 18px;
+  }
 }
 
 .video-img {
@@ -174,4 +186,47 @@ body .marvel-device .screen .embed-responsive {
   background-size: cover;
   width: 100%;
   height: 100%;
+}
+
+.marvel-device.macbook {
+
+    @media (max-width: 1200px) {
+      width: 760px;
+      height: 480px;
+    }
+  
+    @media (max-width: 992px) {
+      width: 520px;
+      height: 340px;
+    }
+  
+    @media (max-width: 768px) {
+      width: 320px;
+      height: 220px;
+      padding: 25px;
+    }
+}
+
+.marvel-device.macbook .bottom-bar, .marvel-device.macbook .top-bar {
+  @media (max-width: 1200px) {
+    top: 570px;
+  }
+  
+  @media (max-width: 992px) {
+    top: 430px;
+    width: calc(100% + 2 * 40px);
+    left: -40px;
+  }
+
+  @media (max-width: 768px) {
+    top: 260px;
+    width: calc(100% + 2 * 10px);
+    left: -10px;
+    height: 10px;
+  }
+}
+
+.test-wrapper {
+  display: flex;
+  justify-content: center;
 }

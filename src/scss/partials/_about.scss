@@ -3,6 +3,11 @@
   background-size: cover;
   background-position: center center;
   padding: 200px 0px;
+  
+  @media (max-width: 576px) {
+    padding: 100px 0px;
+  }
+
 }
 
 .about {
@@ -12,6 +17,11 @@
   &__title {
     font-size: 60px;
     margin-bottom: 20px;
+    
+    @media (max-width: 768px) {
+      font-size: 40px;
+    }
+    
   }
 
   &__text {

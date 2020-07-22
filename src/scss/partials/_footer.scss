@@ -9,6 +9,10 @@
 }
 
 .footer-list {
+  
+  @media (max-width: 768px) {
+    margin-bottom: 20px;
+  }
 
   &__title {
     font-size: 18px;
@@ -38,9 +42,20 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  
+  @media (max-width: 576px) {
+    flex-direction: column;
+    align-items: flex-start;
+  }
 
   &__description {
-    width: 50%;
+    width: 70%;
+    
+    @media (max-width: 576px) {
+      width: 100%;
+      margin-bottom: 20px;
+    }
+    
   }
 
   &__title {
@@ -75,6 +90,7 @@
     }
 
     &:hover {
+
       border-color: #f05032;
       svg {
         fill: #f05032;
